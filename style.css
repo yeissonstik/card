@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Kumbh Sans', sans-serif;
+    src: url('./fonts/KumbhSans-Bold.ttf');
+    
+}
+:root{
+    --font-bold: 'Kumbh Sans', sans-serif;
+    --dark-gray: rgba(116, 115, 115, 0.993);
+    --light-gray:  rgba(153, 152, 152, 0.685);
+}
+
+body{
+    max-height: 100vh;
+    background-color: #228883;
+    font-size: 18px;
+    font-family: var(--font-bold);
+}
+#capa1, #capa2 {background-size: 800px;}
+#capa1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image:url('./images/bg-pattern-top.svg') ;
+        background-repeat: no-repeat; 
+        background-position-x: -40vh;
+        background-position-y: -60vh;
+        z-index: 0;
+}
+#capa2 { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:url('./images/bg-pattern-bottom.svg'); 
+    background-repeat: no-repeat; 
+    background-position-x: 120vh;
+    background-position-y: 40vh;
+    z-index: 0;
+}
+    
+
+main{
+    position: absolute;
+    z-index: 1;
+    right: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: auto;
+    overflow: hidden;
+    width: 450px;
+    background-color: honeydew;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.background-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__title{
+    text-align: center;
+}
+.card__title section {
+    position: relative;
+    top: -40px;
+}
+
+.card__title-img{
+    width: 120px;
+    position: relative;
+    top: -60px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.card__title-age{
+    color: var(--dark-gray);
+    font-size: 25px;
+}
+.card__title-from{
+    color: var(--dark-gray);
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--light-gray);
+    padding: 50px 0;
+}
+
+.card__info-subtitle{
+    color: var(--dark-gray);
+}
+
+footer{
+    display: flex;
+    height: 80px;
+    font-family: var(--font-bold);
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution { font-size: 18px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

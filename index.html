@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mycard</title>
+    <link rel="text" href="./fonts/KumbhSans-Light.ttf">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="capa1">
+    </div>
+    <div id="capa2"></div>
+    
     <main>
         <div class="card">
-            <div>
-                <img src="" alt="">
+            <div class="background-image">
+                <img src="./images/bg-pattern-card.svg" alt="">
             </div>
-            <section>
-                    <img src="" alt="">    
-                <section class="card-info">
-                    <h3>yeisson stik  <span>26</span></h3>
-                    <h5>London</h5>
+            <section class="card__title">
+                    <img class="card__title-img" src="./images/foto-yeisson.jpg" alt="">    
+                <section>
+                    <h3 class="card__title-name">Yeisson Stik  <span class="card__title-age">26</span></h3>
+                    <span class="card__title-from">London</span>
                 </section>
             </section>
-            <section class="card-info-footer">
+            <section class="card__info">
                 <div>
-                    <h1></h1>
+                    <h1 class="card__info-title">80k</h1>
+                    <span class="card__info-subtitle">Followers</span>
+                </div>
+                <div>
+                    <h1 class="card__info-title">803k</h1>
+                    <span class="card__info-subtitle">Likes</span>
+                </div>
+                <div>
+                    <h1 class="card__info-title">1.4k</h1>
+                    <span class="card__info-subtitle">Photos</span>
                 </div>
             </section>
         </div>
+        <footer>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Yeisson Stik Gutierrez</a>.
+            </div>
+        </footer>
     </main>
 </body>
 </html>
